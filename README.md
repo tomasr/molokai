@@ -19,12 +19,8 @@ If you prefer the scheme to match the original monokai background color, put thi
 let g:molokai_original = 1
 ```
 
-There is also an alternative sheme under development for color terminals which attempts to bring the 256 color version as close as possible to the the default (dark) GUI version. To access, add this to your .vimrc:
+There is also an alternative scheme under development for color terminals which attempts to bring the 256 color version as close as possible to the the default (dark) GUI version. To access, add this to your .vimrc:
 ```
 let g:rehash256 = 1
 ```
 
-Note: when using the console version, add this command after enabling the colorscheme in your .vimrc:
-```
-set background=dark
-```
