@@ -10,7 +10,6 @@
 
 hi clear
 
-set background=dark
 if version > 580
     " no guarantees for version 5.8 and below, but this makes it stop
     " complaining
@@ -271,3 +270,7 @@ if &t_Co > 255
        hi SpecialKey      ctermfg=239
    endif
 end
+
+" Must be at the end, because of ctermbg=234 bug.
+" https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
+set background=dark
