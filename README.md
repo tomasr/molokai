@@ -24,3 +24,7 @@ There is also an alternative scheme under development for color terminals which 
 let g:rehash256 = 1
 ```
 
+If italicized text does not show up well with your font, you can disable italics by adding this to your .vimrc:
+```
+let g:molokai_italics = 0
+```
