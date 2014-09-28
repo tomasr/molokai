@@ -26,6 +26,12 @@ else
     let s:molokai_original = 0
 endif
 
+if exists("g:molokai_transparent")
+    let s:molokai_transparent = g:molokai_transparent
+else
+    let s:molokai_transparent = 0
+endif
+
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -138,6 +144,10 @@ if &t_Co > 255
    if s:molokai_original == 1
       hi Normal                   ctermbg=234
       hi CursorLine               ctermbg=235   cterm=none
+      hi CursorLineNr ctermfg=208               cterm=none
+   elseif s:molokai_transparent == 1
+      hi Normal       ctermfg=252 ctermbg=none
+      hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
       hi Normal       ctermfg=252 ctermbg=233
