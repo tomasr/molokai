@@ -12,7 +12,21 @@ By default, it has a dark gray background based on the version created by Hamish
 
 ## Installation
 
-Copy the file on your .vim/colors folder.
+Copy the colors/molokai.vim file to your .vim/colors folder
+
+```bash
+# Assumes .vim is in your home directory
+$ mkdir -p $HOME/.vim/colors
+$ curl https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim > $HOME/.vim/colors/molokai.vim
+```
+
+Enable the molokai color scheme in .vimrc
+
+```bash
+$ printf '" Enable molokai colorscheme\n" https://github.com/tomasr/molokai\ncolorscheme molokai' >> $HOME/.vimrc
+```
+
+## Settings
 
 If you prefer the scheme to match the original monokai background color, put this in your .vimrc file: 
 ```
