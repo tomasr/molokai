@@ -44,6 +44,12 @@ hi DiffDelete      guifg=#960050 guibg=#1E0010
 hi DiffText                      guibg=#4C4745 gui=italic,bold
 
 hi Directory       guifg=#A6E22E               gui=bold
+
+"markdown
+hi markdownCodeDelimiter        guifg=#A6E22E
+hi markdownCode                 guifg=#A6E22E
+hi markdownCodeBlock            guifg=#A6E22E
+
 hi Error           guifg=#E6DB74 guibg=#1E0010
 hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
 hi Exception       guifg=#A6E22E               gui=bold
@@ -161,6 +167,12 @@ if &t_Co > 255
    hi DiffText                    ctermbg=102 cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
+
+   "markdown
+   hi markdownCodeDelimiter         ctermfg=118
+   hi markdownCode                  ctermfg=118
+   hi markdownCodeBlock             ctermfg=118
+
    hi Error           ctermfg=219 ctermbg=89
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
@@ -247,6 +259,12 @@ if &t_Co > 255
        hi DiffDelete      ctermfg=125 ctermbg=233
 
        hi Directory       ctermfg=154               cterm=bold
+
+       "markdown
+       hi markdownCodeDelimiter     ctermfg=154
+       hi markdownCode              ctermfg=154
+       hi markdownCodeBlock         ctermfg=154
+
        hi Error           ctermfg=222 ctermbg=233
        hi Exception       ctermfg=154               cterm=bold
        hi Float           ctermfg=141
