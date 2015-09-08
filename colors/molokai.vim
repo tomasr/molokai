@@ -37,7 +37,7 @@ hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
 hi String          guifg=#E6DB74
 hi Conditional     guifg=#F92672               gui=bold
-if s:molokai_reduce_bold
+if s:molokai_reduce_bold == 1
     hi Constant    guifg=#AE81FF
 else
     hi Constant    guifg=#AE81FF               gui=bold
@@ -80,7 +80,7 @@ hi PmenuSel                      guibg=#808080
 hi PmenuSbar                     guibg=#080808
 hi PmenuThumb      guifg=#66D9EF
 
-if s:molokai_reduce_bold
+if s:molokai_reduce_bold == 1
     hi PreCondit   guifg=#A6E22E
 else
     hi PreCondit   guifg=#A6E22E               gui=bold
@@ -100,7 +100,7 @@ if has("spell")
     hi SpellLocal  guisp=#70F0F0 gui=undercurl
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
-if s:molokai_reduce_bold
+if s:molokai_reduce_bold == 1
     hi Statement   guifg=#F92672
 else
     hi Statement   guifg=#F92672               gui=bold
@@ -166,7 +166,7 @@ if &t_Co > 255
    hi Number          ctermfg=135
    hi String          ctermfg=144
    hi Conditional     ctermfg=161               cterm=bold
-   if s:molokai_reduce_bold
+   if s:molokai_reduce_bold == 1
        hi Constant    ctermfg=135
    else
        hi Constant    ctermfg=135               cterm=bold
@@ -209,7 +209,7 @@ if &t_Co > 255
    hi PmenuSbar                   ctermbg=232
    hi PmenuThumb      ctermfg=81
 
-   if s:molokai_reduce_bold
+   if s:molokai_reduce_bold == 1
        hi PreCondit   ctermfg=118
    else
        hi PreCondit   ctermfg=118               cterm=bold
@@ -230,7 +230,7 @@ if &t_Co > 255
        hi SpellLocal              ctermbg=17
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
-   if s:molokai_reduce_bold
+   if s:molokai_reduce_bold == 1
        hi Statement   ctermfg=161
    else
        hi Statement   ctermfg=161               cterm=bold
@@ -271,7 +271,7 @@ if &t_Co > 255
        hi Number          ctermfg=141
        hi String          ctermfg=222
        hi Conditional     ctermfg=197               cterm=bold
-       if s:molokai_reduce_bold
+       if s:molokai_reduce_bold == 1
            hi Constant    ctermfg=141
        else
            hi Constant    ctermfg=141               cterm=bold
