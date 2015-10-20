@@ -24,8 +24,22 @@ If you prefer a transparent background for the terminal version, put this in you
 let g:molokai_transparent = 1
 ```
 
+By default, comments are a very dark gray and not easy to read. To use a dark 
+green instead, put this in your .vimrc file:
+```
+let g:molokai_alternate_comments = 1
+```
+
+
 There is also an alternative scheme under development for color terminals which attempts to bring the 256 color version as close as possible to the the default (dark) GUI version. To access, add this to your .vimrc:
 ```
 let g:rehash256 = 1
 ```
+
+
+## Customisation
+
+If you want to change terminal colors, [this script](https://gist.github.com/MicahElliott/719710)
+converts RGB colors to xterm numbers.
+
 
