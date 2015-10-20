@@ -20,17 +20,6 @@ if version > 580
 endif
 let g:colors_name="molokai"
 
-if exists("g:molokai_original")
-    let s:molokai_original = g:molokai_original
-else
-    let s:molokai_original = 0
-endif
-
-if exists("g:molokai_transparent")
-    let s:molokai_transparent = g:molokai_transparent
-else
-    let s:molokai_transparent = 0
-endif
 
 
 hi Boolean         guifg=#AE81FF
@@ -115,7 +104,7 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
-if s:molokai_original == 1
+if exists("g:molokai_original") && g:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
@@ -141,11 +130,11 @@ end
 " Support for 256-color terminal
 "
 if &t_Co > 255
-   if s:molokai_original == 1
+   if exists("g:molokai_original") && g:molokai_original == 1
       hi Normal                   ctermbg=234
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
-   elseif s:molokai_transparent == 1
+   elseif exists("g:molokai_transparent") && g:molokai_transparent == 1
       hi Normal       ctermfg=252 ctermbg=none
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
