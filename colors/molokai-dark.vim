@@ -190,3 +190,11 @@ if &t_Co > 255
     hi NonText         ctermfg=239
     hi SpecialKey      ctermfg=239
 end
+
+" Special cases
+
+" Show default Git colors
+hi diffAdded   ctermfg=40  cterm=none guifg=#00AF00 gui=none
+hi diffRemoved ctermfg=160 cterm=none guifg=#AF0000 gui=none
+hi diffLine    ctermfg=43  cterm=none guifg=#00D7AF gui=none
+hi link diffSubname Normal
