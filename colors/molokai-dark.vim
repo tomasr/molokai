@@ -198,3 +198,7 @@ hi diffAdded   ctermfg=40  cterm=none guifg=#00AF00 gui=none
 hi diffRemoved ctermfg=160 cterm=none guifg=#AF0000 gui=none
 hi diffLine    ctermfg=43  cterm=none guifg=#00D7AF gui=none
 hi link diffSubname Normal
+
+" Syntastic
+hi SyntasticErrorSign   ctermfg=197 ctermbg=235 guifg=#F92672 guibg=#232526
+hi SyntasticWarningSign ctermfg=221 ctermbg=235 guibg=#FFDF5F guibg=#232526
