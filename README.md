@@ -1,26 +1,29 @@
-# Molokai Color Scheme for Vim
+Molokai-dark Color Scheme for Vim
+=================================
 
-Molokai is a Vim port of the monokai theme for TextMate originally created by Wimer Hazenberg.
+Molokai-dark is a darker version of the [Molokai theme by Tomas Restrepo](https://github.com/tomasr/molokai).
 
-By default, it has a dark gray background based on the version created by Hamish Stuart Macpherson for the E editor.
+Molokai-dark uses a completely black background, increasing the contrast between background and text.
 
-![Gray Background](http://www.winterdom.com/weblog/content/binary/WindowsLiveWriter/MolokaiforVim_8602/molokai_normal_small_3.png)
+256 color terminals are fully supported with only minor differences from the GUI version.
 
-![Molokai Original](http://www.winterdom.com/weblog/content/binary/WindowsLiveWriter/MolokaiforVim_8602/molokai_original_small_3.png)
 
-256-Color terminals are also supported, though there are some differences with the Gui version. Only the dark gray background style is supported on terminal vim at this time.
+Screenshots
+-----------
+Coming soon
 
-## Installation
 
-Copy the file on your .vim/colors folder.
+Installation
+------------
 
-If you prefer the scheme to match the original monokai background color, put this in your .vimrc file: 
-```
-let g:molokai_original = 1
-```
+Add `colorscheme molokai-dark` to your `~/.vimrc`
 
-There is also an alternative scheme under development for color terminals which attempts to bring the 256 color version as close as possible to the the default (dark) GUI version. To access, add this to your .vimrc:
-```
-let g:rehash256 = 1
-```
+### With [Pathogen](https://github.com/tpope/vim-pathogen)
+Clone this repo into your `~/.vim/bundles` directory.
+
+### With [Vundle](https://github.com/VundleVim/Vundle.vim)
+Add `Plugin 'pR0Ps/molokai-dark'` to your `~/.vimrc` and run `:PluginInstall`
+
+### Manual install
+Grab `molokai-dark.vim` from the `colors` folder of this repo and save it to your `~/.vim/colors` folder.
 
