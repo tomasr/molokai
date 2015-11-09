@@ -224,7 +224,7 @@ if &t_Co > 255
    hi WildMenu        ctermfg=81  ctermbg=16
 
    if exists("g:molokai_alternate_comments") && g:molokai_alternate_comments == 1
-       hi Comment         ctermfg=58
+       hi Comment         ctermfg=60
    else
        hi Comment         ctermfg=59
    endif
