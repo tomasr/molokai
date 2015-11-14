@@ -11,8 +11,16 @@ By default, it has a dark gray background based on the version created by Hamish
 256-Color terminals are also supported, though there are some differences with the Gui version. Only the dark gray background style is supported on terminal vim at this time.
 
 ## Installation
+Clone this repo
+`git clone https://github.com/tomasr/molokai.git`
 
-Copy the file on your .vim/colors folder.
+Copy the colors file to your vim folder.
+`cp molokai/colors/molokai.vim ~/.vim/colors`
+
+in your .vimrc file
+```
+colorscheme molokai
+```
 
 If you prefer the scheme to match the original monokai background color, put this in your .vimrc file: 
 ```
