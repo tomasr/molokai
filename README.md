@@ -24,3 +24,8 @@ There is also an alternative scheme under development for color terminals which 
 let g:rehash256 = 1
 ```
 
+Some bold style is boring, add this to your .vimrc file to reduce it:
+```
+let g:molokai_reduce_bold = 1
+```
+

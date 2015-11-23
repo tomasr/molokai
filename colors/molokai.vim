@@ -26,13 +26,22 @@ else
     let s:molokai_original = 0
 endif
 
+if exists("g:molokai_reduce_bold")
+    let s:molokai_reduce_bold = g:molokai_reduce_bold
+else
+    let s:molokai_reduce_bold = 0
+endif
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
 hi String          guifg=#E6DB74
 hi Conditional     guifg=#F92672               gui=bold
-hi Constant        guifg=#AE81FF               gui=bold
+if s:molokai_reduce_bold == 1
+    hi Constant    guifg=#AE81FF
+else
+    hi Constant    guifg=#AE81FF               gui=bold
+endif
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi iCursor         guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=bold
@@ -71,7 +80,11 @@ hi PmenuSel                      guibg=#808080
 hi PmenuSbar                     guibg=#080808
 hi PmenuThumb      guifg=#66D9EF
 
-hi PreCondit       guifg=#A6E22E               gui=bold
+if s:molokai_reduce_bold == 1
+    hi PreCondit   guifg=#A6E22E
+else
+    hi PreCondit   guifg=#A6E22E               gui=bold
+endif
 hi PreProc         guifg=#A6E22E
 hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
@@ -87,7 +100,11 @@ if has("spell")
     hi SpellLocal  guisp=#70F0F0 gui=undercurl
     hi SpellRare   guisp=#FFFFFF gui=undercurl
 endif
-hi Statement       guifg=#F92672               gui=bold
+if s:molokai_reduce_bold == 1
+    hi Statement   guifg=#F92672
+else
+    hi Statement   guifg=#F92672               gui=bold
+endif
 hi StatusLine      guifg=#455354 guibg=fg
 hi StatusLineNC    guifg=#808080 guibg=#080808
 hi StorageClass    guifg=#FD971F               gui=italic
@@ -149,7 +166,11 @@ if &t_Co > 255
    hi Number          ctermfg=135
    hi String          ctermfg=144
    hi Conditional     ctermfg=161               cterm=bold
-   hi Constant        ctermfg=135               cterm=bold
+   if s:molokai_reduce_bold == 1
+       hi Constant    ctermfg=135
+   else
+       hi Constant    ctermfg=135               cterm=bold
+   endif
    hi Cursor          ctermfg=16  ctermbg=253
    hi Debug           ctermfg=225               cterm=bold
    hi Define          ctermfg=81
@@ -158,7 +179,7 @@ if &t_Co > 255
    hi DiffAdd                     ctermbg=24
    hi DiffChange      ctermfg=181 ctermbg=239
    hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102 cterm=bold
+   hi DiffText                    ctermbg=102   cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
@@ -177,7 +198,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   hi MatchParen      ctermfg=233 ctermbg=208   cterm=bold
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
@@ -188,7 +209,11 @@ if &t_Co > 255
    hi PmenuSbar                   ctermbg=232
    hi PmenuThumb      ctermfg=81
 
-   hi PreCondit       ctermfg=118               cterm=bold
+   if s:molokai_reduce_bold == 1
+       hi PreCondit   ctermfg=118
+   else
+       hi PreCondit   ctermfg=118               cterm=bold
+   endif
    hi PreProc         ctermfg=118
    hi Question        ctermfg=81
    hi Repeat          ctermfg=161               cterm=bold
@@ -205,7 +230,11 @@ if &t_Co > 255
        hi SpellLocal              ctermbg=17
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
-   hi Statement       ctermfg=161               cterm=bold
+   if s:molokai_reduce_bold == 1
+       hi Statement   ctermfg=161
+   else
+       hi Statement   ctermfg=161               cterm=bold
+   endif
    hi StatusLine      ctermfg=238 ctermbg=253
    hi StatusLineNC    ctermfg=244 ctermbg=232
    hi StorageClass    ctermfg=208
@@ -242,7 +271,11 @@ if &t_Co > 255
        hi Number          ctermfg=141
        hi String          ctermfg=222
        hi Conditional     ctermfg=197               cterm=bold
-       hi Constant        ctermfg=141               cterm=bold
+       if s:molokai_reduce_bold == 1
+           hi Constant    ctermfg=141
+       else
+           hi Constant    ctermfg=141               cterm=bold
+       endif
 
        hi DiffDelete      ctermfg=125 ctermbg=233
 
