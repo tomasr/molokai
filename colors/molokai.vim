@@ -80,6 +80,8 @@ hi Search          guifg=#000000 guibg=#FFE792
 " marks
 hi SyntasticErrorSign   guifg=#F92672 guibg=#232526
 hi SyntasticWarningSign guifg=#E6DB74 guibg=#232526
+hi NeomakeErrorSign     guifg=#F92672 guibg=#232526
+hi NeomakeWarningSign   guifg=#E6DB74 guibg=#232526
 
 hi SignColumn      guifg=#A6E22E guibg=#232526
 hi SpecialChar     guifg=#F92672               gui=bold
@@ -201,6 +203,8 @@ if &t_Co > 255
    " marks column
    hi SyntasticErrorSign   ctermfg=161 ctermbg=235
    hi SyntasticWarningSign ctermfg=144 ctermbg=235
+   hi NeomakeErrorSign     ctermfg=161 ctermbg=235
+   hi NeomakeWarningSign   ctermfg=144 ctermbg=235
 
    hi SignColumn      ctermfg=118 ctermbg=235
    hi SpecialChar     ctermfg=161               cterm=bold
