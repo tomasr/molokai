@@ -14,6 +14,12 @@ By default, it has a dark gray background based on the version created by Hamish
 
 Copy the file on your .vim/colors folder.
 
+Then paste the following in the `.vimrc` file:
+
+```
+colorscheme molokai
+```
+
 If you prefer the scheme to match the original monokai background color, put this in your .vimrc file: 
 ```
 let g:molokai_original = 1
