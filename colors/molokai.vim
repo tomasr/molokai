@@ -26,6 +26,12 @@ else
     let s:molokai_original = 0
 endif
 
+if exists("g:molokai_vte")
+  let s:molokai_vte = g:molokai_vte
+else
+  let s:molokai_vte = 0
+endif
+
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -177,7 +183,11 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   if s:molokai_vte == 1
+     hi MatchParen      ctermfg=208  ctermbg=233 cterm=bold
+   else
+     hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   endif
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
