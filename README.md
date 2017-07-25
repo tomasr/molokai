@@ -12,9 +12,10 @@ By default, it has a dark gray background based on the version created by Hamish
 
 ## Installation
 
-Copy the file on your .vim/colors folder.
+Copy the file `colors/molokai.vim` from this repo to your `.vim/colors` folder 
+(create the folder if needed).
 
-Then paste the following in the `.vimrc` file:
+Then paste the following in your `~/.vimrc` file (create the file if needed):
 
 ```
 colorscheme molokai
