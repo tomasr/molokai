@@ -26,5 +26,5 @@ let g:rehash256 = 1
 
 If italicized text does not show up well with your font, you can disable italics by adding this to your .vimrc:
 ```
-let g:molokai_italics = 0
+let g:molokai_italic = 0
 ```
