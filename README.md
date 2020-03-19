@@ -12,7 +12,7 @@ By default, it has a dark gray background based on the version created by Hamish
 
 ## Installation
 
-Copy the file on your .vim/colors folder.
+Copy the file on your ~/.vim/colors folder.
 
 If you prefer the scheme to match the original monokai background color, put this in your .vimrc file: 
 ```
