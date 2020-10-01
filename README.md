@@ -6,7 +6,7 @@ By default, it has a dark gray background based on the version created by Hamish
 
 ![Gray Background](https://user-images.githubusercontent.com/13169164/94844241-91973f00-03e3-11eb-8610-425c0da15395.png)
 
-![Molokai Original](https://user-images.githubusercontent.com/13169164/94845684-a674d200-03e5-11eb-9d1d-3a35ff949b3b.png)
+![Molokai Original](https://user-images.githubusercontent.com/13169164/94847242-f0f74e00-03e7-11eb-947f-b98df70c77f6.png)
 
 256-Color terminals are also supported, though there are some differences with the Gui version. Only the dark gray background style is supported on terminal vim at this time.
 
