@@ -60,7 +60,7 @@ hi Label           guifg=#E6DB74               gui=none
 hi Macro           guifg=#C4BE89               gui=italic
 hi SpecialKey      guifg=#66D9EF               gui=italic
 
-hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
+hi MatchParen guifg=lightblue guibg=darkblue gui=bold
 hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
@@ -177,7 +177,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   hi MatchParen guifg=lightblue guibg=darkblue gui=bold
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
