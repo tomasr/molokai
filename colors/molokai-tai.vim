@@ -114,7 +114,7 @@ if has('nvim')
 hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
 endif
 
-hi DiagnosticWarn guifg=#FFFFFF guibg=#ffd700
+hi DiagnosticWarn ctermbg=yellow ctermfg=white guifg=#FFFFFF guibg=#ffd700 cterm=bold gui=bold
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -169,7 +169,7 @@ if &t_Co > 255
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error 	      ctermfg=white ctermbg=magenta cterm=bold
-   hi DiagnosticError ctermfg=white ctermbg=magenta cterm=bold
+   hi DiagnosticError ctermfg=white ctermbg=yellow cterm=bold
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
