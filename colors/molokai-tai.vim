@@ -117,9 +117,9 @@ endif
 hi LspWarningText guifg=#211d1d guibg=#ffd700 cterm=bold gui=bold
 
 hi LspInformationText guifg=#211d1d guibg=#4169e1 
-hi link LspInformationText LspInformationLine
-hi link LspInformationText LspInformationHighlight
-hi link LspInformationText LspInformationVirtualText
+hi default link LspInformationText LspInformationLine
+hi default link LspInformationText LspInformationHighlight
+hi default link LspInformationText LspInformationVirtualText
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
