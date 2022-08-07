@@ -114,7 +114,7 @@ if has('nvim')
 hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
 endif
 
-hi DiagnosticWarn ctermbg=yellow ctermfg=white guifg=#FFFFFF guibg=#ffd700 cterm=bold gui=bold
+hi LspWarningText ctermbg=yellow ctermfg=white guifg=#fffaf0 guibg=#ffd700 cterm=bold gui=bold
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
