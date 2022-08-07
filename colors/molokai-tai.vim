@@ -45,8 +45,8 @@ hi DiffText                      guibg=#4C4745 gui=italic,bold
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error 	   ctermfg=white ctermbg=magenta guifg=#fffaf0 guibg=#8b008b
-   hi SpellCap  ctermfg=white ctermbg=yellow guifg=#ffff00 guibg=#ffd700
 hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
+
 hi Exception       guifg=#A6E22E               gui=bold
 hi Float           guifg=#AE81FF
 hi FoldColumn      guifg=#465457 guibg=#000000
@@ -69,7 +69,7 @@ hi Operator        guifg=#F92672
 " complete menu
 hi Pmenu           guifg=#66D9EF guibg=#000000
 hi PmenuSel                      guibg=#808080
-hi PmenuSbar                     guibg=#080808
+hi PmenuSbar       guifg=#000000 guibg=#FFFFFF
 hi PmenuThumb      guifg=#66D9EF
 
 hi PreCondit       guifg=#A6E22E               gui=bold
@@ -109,6 +109,10 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
+
+hi NvimInternalError guifg=#FF0000 guibg=#000000 gui=bold
+
+hi DiagnosticWarn guifg=#FFFFFF guibg=#ffd700
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -164,7 +168,6 @@ if &t_Co > 255
    hi Directory       ctermfg=118               cterm=bold
    hi Error 	      ctermfg=white ctermbg=magenta guifg=#fffaf0 guibg=#8b008b
    hi DiagnosticError ctermfg=white ctermbg=magenta guifg=#ffff00 guibg=#8b008b
-   hi SpellCap  ctermfg=white ctermbg=yellow guifg=#ffff00 guibg=#ffd700
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
@@ -188,7 +191,7 @@ if &t_Co > 255
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
    hi PmenuSel        ctermfg=255 ctermbg=242
-   hi PmenuSbar                   ctermbg=232
+   hi PmenuSbar       guifg=#000000 guibg=#FFFFFF
    hi PmenuThumb      ctermfg=81
 
    hi PreCondit       ctermfg=118               cterm=bold
@@ -204,7 +207,7 @@ if &t_Co > 255
    hi Special         ctermfg=81
    if has("spell")
        hi SpellBad                ctermbg=52
-       hi SpellCap                ctermbg=17
+       hi SpellCap  ctermfg=white ctermbg=yellow guifg=#ffff00 guibg=#ffd700
        hi SpellLocal              ctermbg=17
        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
    endif
@@ -251,7 +254,6 @@ if &t_Co > 255
 
        hi Directory       ctermfg=154               cterm=bold
        hi Error 	  ctermfg=white ctermbg=magenta guifg=#fffaf0 guibg=#8b008b
-   hi SpellCap  ctermfg=white ctermbg=yellow guifg=#ffff00 guibg=#ffd700
        hi Exception       ctermfg=154               cterm=bold
        hi Float           ctermfg=141
        hi Function        ctermfg=154
