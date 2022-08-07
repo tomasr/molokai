@@ -248,6 +248,10 @@ if &t_Co > 255
    hi NvimInternalError ctermfg=White ctermbg=Red cterm=bold
    endif
    hi LspWarningText ctermbg=yellow ctermfg=black cterm=bold
+   hi LspInformationText ctermbg=blue ctermfg=black 
+   hi default link LspInformationText LspInformationLine
+   hi default link LspInformationText LspInformationHighlight
+   hi default link LspInformationText LspInformationVirtualText
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
