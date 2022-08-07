@@ -114,7 +114,7 @@ if has('nvim')
 hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
 endif
 
-hi LspWarningText ctermbg=yellow ctermfg=white guifg=#fffaf0 guibg=#ffd700 cterm=bold gui=bold
+hi LspWarningText guifg=#fffaf0 guibg=#211d1d cterm=bold gui=bold
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -240,8 +240,9 @@ if &t_Co > 255
 
    hi SpecialKey      ctermfg=59
    if has('nvim')
-   hi NvimInternalError ctermfg=White ctermbg=Red gui=bold
+   hi NvimInternalError ctermfg=White ctermbg=Red cterm=bold
    endif
+   hi LspWarningText ctermbg=yellow ctermfg=black cterm=bold
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
