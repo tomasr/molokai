@@ -110,7 +110,9 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
-hi NvimInternalError guifg=#FF0000 guibg=#000000 gui=bold
+if has('nvim')
+hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
+endif
 
 hi DiagnosticWarn guifg=#FFFFFF guibg=#ffd700
 
@@ -237,6 +239,9 @@ if &t_Co > 255
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59
+   if has('nvim')
+   hi NvimInternalError ctermfg=White ctermbg=Red gui=bold
+   endif
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
