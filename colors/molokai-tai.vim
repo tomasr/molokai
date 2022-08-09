@@ -120,11 +120,14 @@ hi LspInformationText guifg=#211d1d guibg=#4169e1
 hi default link LspInformationText LspInformationLine
 hi default link LspInformationText LspInformationHighlight
 hi default link LspInformationText LspInformationVirtualText
+hi DiagnosticHint guifg=#211d1d guibg=#2e8b57 cterm=bold gui=bold
 
 " typescript
 hi typescriptFuncCallArg guifg=#66D9EF
 hi typescriptBlock guifg=#fab27b
 hi typescriptParens guifg=#f78833
+hi typescriptVariableDeclaration guifg=#d2b48c
+hi typescriptParenExp guifg=#778899
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
