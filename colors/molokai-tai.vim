@@ -129,6 +129,9 @@ hi typescriptParens guifg=#f78833
 hi typescriptVariableDeclaration guifg=#d2b48c
 hi typescriptParenExp guifg=#778899
 
+" html
+hi default link htmlEndTag htmlTag
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
@@ -262,6 +265,9 @@ if &t_Co > 255
    hi default link LspInformationText LspInformationLine
    hi default link LspInformationText LspInformationHighlight
    hi default link LspInformationText LspInformationVirtualText
+
+   " html
+   hi default link htmlEndTag htmlTag
 
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
