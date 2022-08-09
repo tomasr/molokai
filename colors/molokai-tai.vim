@@ -31,7 +31,7 @@ hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
 hi Number          guifg=#3b6b31
 hi String          guifg=#ffa500
-hi Conditional     guifg=#5827F7               gui=bold
+hi Conditional     guifg=#8027F4               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi iCursor         guifg=#000000 guibg=#F8F8F0
@@ -160,7 +160,7 @@ if &t_Co > 255
    hi Character       ctermfg=144
    hi Number          ctermfg=34
    hi String          ctermfg=214
-   hi Conditional     ctermfg=57               cterm=bold
+   hi Conditional     ctermfg=53               cterm=bold
    hi Constant        ctermfg=135               cterm=bold
    hi Cursor          ctermfg=16  ctermbg=253
    hi Debug           ctermfg=225               cterm=bold
