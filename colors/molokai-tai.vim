@@ -61,7 +61,7 @@ hi Label           guifg=#E6DB74               gui=none
 hi Macro           guifg=#C4BE89               gui=italic
 hi SpecialKey      guifg=#66D9EF               gui=italic
 
-hi MatchParen guifg=lightblue guibg=darkblue gui=bold
+hi MatchParen 	   guifg=#c82c55 guibg=#0d0116 gui=bold
 hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
@@ -114,12 +114,17 @@ if has('nvim')
 hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
 endif
 
+" Lsp
 hi LspWarningText guifg=#211d1d guibg=#ffd700 cterm=bold gui=bold
-
 hi LspInformationText guifg=#211d1d guibg=#4169e1 
 hi default link LspInformationText LspInformationLine
 hi default link LspInformationText LspInformationHighlight
 hi default link LspInformationText LspInformationVirtualText
+
+" typescript
+hi typescriptFuncCallArg guifg=#66D9EF
+hi typescriptBlock guifg=#fab27b
+hi typescriptParens guifg=#f78833
 
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
@@ -190,7 +195,7 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen guifg=lightblue guibg=darkblue gui=bold
+   hi MatchParen      ctermfg=160 ctermbg=234 gui=bold
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
@@ -247,6 +252,8 @@ if &t_Co > 255
    if has('nvim')
    hi NvimInternalError ctermfg=White ctermbg=Red cterm=bold
    endif
+   
+   "Lsp
    hi LspWarningText ctermbg=yellow ctermfg=black cterm=bold
    hi LspInformationText ctermbg=blue ctermfg=black 
    hi default link LspInformationText LspInformationLine
