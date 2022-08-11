@@ -29,7 +29,7 @@ endif
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
-hi Number          guifg=#3b6b31
+hi Number          guifg=#70cc5e
 hi String          guifg=#ffa500
 hi Conditional     guifg=#8027F4               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
@@ -169,7 +169,7 @@ if &t_Co > 255
    endif
    hi Boolean         ctermfg=135
    hi Character       ctermfg=144
-   hi Number          ctermfg=34
+   hi Number          ctermfg=46
    hi String          ctermfg=214
    hi Conditional     ctermfg=53               cterm=bold
    hi Constant        ctermfg=135               cterm=bold
