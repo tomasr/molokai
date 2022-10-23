@@ -118,14 +118,16 @@ hi NormalFloat guibg=#7fb8eb
 endif
 
 " Lsp
-hi LspWarningText guifg=#211d1d guibg=#ffd700 cterm=bold gui=bold
 hi LspInformationText guifg=#211d1d guibg=#4169e1 
 hi default link LspInformationText LspInformationLine
 hi default link LspInformationText LspInformationHighlight
 hi default link LspInformationText LspInformationVirtualText
-hi DiagnosticHint guifg=#211d1d guibg=#2e8b57 cterm=bold gui=bold
 hi DiagnosticError guifg=#211d1d guibg=#a8638b cterm=bold gui=bold
 hi DiagnosticFloatingError guifg=#a8638b
+hi DiagnosticWarn guibg=#211d1d guifg=#ffd700 cterm=bold gui=bold
+hi DiagnosticFloatingWarn guifg=#ffd700
+hi DiagnosticHint guifg=#211d1d guibg=#2e8b57 cterm=bold gui=bold
+hi DiagnosticFloatingHint guifg=#2e8b57
 
 " typescript
 hi typescriptFuncCallArg guifg=#66D9EF
