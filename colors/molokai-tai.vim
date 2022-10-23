@@ -113,7 +113,7 @@ hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 if has('nvim')
 hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
 
-hi NormalFloat guibg=#696969
+hi NormalFloat guibg=#2F4F4F		
 "hi Float guibg=#336626
 endif
 
@@ -135,7 +135,7 @@ hi typescriptBlock guifg=#fab27b
 hi typescriptParens guifg=#f78833
 hi typescriptVariableDeclaration guifg=#d2b48c
 hi typescriptParenExp guifg=#778899
-hi typescriptFuncType guibg=#696969 guifg=#A6E22E
+hi typescriptFuncType guibg=#2F4F4F	 guifg=#A6E22E
 
 " html
 hi default link htmlEndTag htmlTag
