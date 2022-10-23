@@ -112,6 +112,9 @@ hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
 if has('nvim')
 hi NvimInternalError guifg=#000000 guifg=#000000 gui=bold
+
+hi NormalFloat guibg=#7fb8eb
+"hi Float guibg=#336626
 endif
 
 " Lsp
@@ -121,6 +124,8 @@ hi default link LspInformationText LspInformationLine
 hi default link LspInformationText LspInformationHighlight
 hi default link LspInformationText LspInformationVirtualText
 hi DiagnosticHint guifg=#211d1d guibg=#2e8b57 cterm=bold gui=bold
+hi DiagnosticError guifg=#211d1d guibg=#a8638b cterm=bold gui=bold
+hi DiagnosticFloatingError guifg=#a8638b
 
 " typescript
 hi typescriptFuncCallArg guifg=#66D9EF
