@@ -18,7 +18,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="molokai-tai"
+let g:colors_name="molokai_tai"
 
 if exists("g:molokai_original")
     let s:molokai_original = g:molokai_original
