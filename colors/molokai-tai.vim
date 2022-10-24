@@ -125,7 +125,7 @@ hi default link LspInformationText LspInformationVirtualText
 hi DiagnosticError guifg=#211d1d guibg=#a8638b cterm=bold gui=bold
 hi DiagnosticFloatingError guifg=#a8638b
 hi DiagnosticWarn guibg=#211d1d guifg=#ffd700 cterm=bold gui=bold
-hi DiagnosticFloatingWarn guifg=#ffd700
+hi DiagnosticFloatingWarn guifg=#ffd700 guibg=#211d1d
 hi DiagnosticHint guifg=#211d1d guibg=#2e8b57 cterm=bold gui=bold
 hi DiagnosticFloatingHint guifg=#2e8b57
 
