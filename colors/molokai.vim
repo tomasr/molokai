@@ -140,6 +140,10 @@ hi typescriptFuncType guibg=#2F4F4F	 guifg=#A6E22E
 " html
 hi default link htmlEndTag htmlTag
 
+" barbar
+hi BufferDefaultInactive guibg=#1e222a guifg=#c0caf5
+hi BufferDefaultActive guifg=#1e222a guibg=#c0caf5
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
